@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainView: UIView {
+class DepositView: UIView {
     
     var sum = UITextField(placeholder: "Введите сумму вклада")
     var percentage = UITextField(placeholder: "Введите процентную ставку")
@@ -17,21 +17,16 @@ class MainView: UIView {
     var labelBezKapit = UILabel(text: "Deposit calculator", font: ODFonts.titleLabelFont)
     var goToTheCreditButton = UIButton(title: "Go to the credit calculator", bgColor: .blue, textColor: .white, font: ODFonts.avenir, cornerRadius: 15)
    
-    
-    
     init() {
         super.init(frame: CGRect())
         setupViews()
         setupConstraints()
-        
-    }
-    
-    
+        }
+
     func setupViews() {
         backgroundColor = .black
         result.backgroundColor = .white
         sum.layer.cornerRadius = 10
-        
         percentage.layer.cornerRadius = 10
         days.layer.cornerRadius = 10
         result.clipsToBounds = true
@@ -43,9 +38,8 @@ class MainView: UIView {
         result.sizeToFit()
         result.lineBreakMode = .byWordWrapping
         sum.clearButtonMode = .whileEditing
-        
-    
-        
+        days.clearButtonMode = .whileEditing
+        percentage.clearButtonMode = .whileEditing
         sum.textColor = .blue
         percentage.textColor = .blue
         days.textColor = .blue
@@ -54,30 +48,21 @@ class MainView: UIView {
         sum.backgroundColor = .lightGray
         result.backgroundColor = .black
         result.textColor = .white
-        
         let placeholderText = NSAttributedString(string: "Deposit amount",attributes: [NSAttributedString.Key.foregroundColor : UIColor.darkGray])
         sum.attributedPlaceholder = placeholderText
         let pcForPercentage = NSAttributedString(string: "Interest rate",attributes: [NSAttributedString.Key.foregroundColor:UIColor.darkGray])
         percentage.attributedPlaceholder = pcForPercentage
         let pcForDays = NSAttributedString(string: "Deposit term/days",attributes: [NSAttributedString.Key.foregroundColor:UIColor.darkGray])
         days.attributedPlaceholder = pcForDays
-        
-        
-        
-        
-        
     }
     
     func setupConstraints() {
         
         let stack = UIStackView(arrangedSubviews: [sum,percentage,days,buttonToSum], axis: .vertical, spacing: 10)
-      
         addSubview(labelBezKapit)
         addSubview(stack)
         addSubview(result)
         addSubview(goToTheCreditButton)
-       
-        
         Helper.tamicOff(views: [stack,labelBezKapit,sum,percentage,buttonToSum,result,days,goToTheCreditButton])
         
         NSLayoutConstraint.activate([stack.centerXAnchor.constraint(equalTo: centerXAnchor),
@@ -97,11 +82,9 @@ class MainView: UIView {
         
         NSLayoutConstraint.activate([goToTheCreditButton.centerXAnchor.constraint(equalTo: centerXAnchor),
                                      goToTheCreditButton.topAnchor.constraint(equalTo: result.bottomAnchor,constant: 32),
-                                     goToTheCreditButton.widthAnchor.constraint(equalToConstant: 350),
-                                   ])
+                                     goToTheCreditButton.widthAnchor.constraint(equalToConstant: 350)])
         
     }
-    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

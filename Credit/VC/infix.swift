@@ -7,10 +7,6 @@
 
 import Foundation
 
-//infix operator ^^ { associativity left precedence 160 }
-//func ^^ (radix: Int, power: Int) -> Int {
-//    return Int(pow(Double(radix), Double(power)))
-//}
 
 infix operator * : MultiplicationPrecedence
 

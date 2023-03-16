@@ -24,10 +24,8 @@ class CreditView: UIView {
         setupConstraints()
     }
     
-    
     func setupSubviews() {
         backgroundColor = .white
-        
         creditSum.backgroundColor = .systemBlue
         percentage.backgroundColor = .systemBlue
         period.backgroundColor = .systemBlue
@@ -41,31 +39,26 @@ class CreditView: UIView {
         totalSum.lineBreakMode = .byWordWrapping
         monthpay.lineBreakMode = .byWordWrapping
         monthpay.numberOfLines = 0
-
-        
+        creditSum.clearButtonMode = .whileEditing
+        period.clearButtonMode = .whileEditing
+        percentage.clearButtonMode = .whileEditing
         let placeholderText = NSAttributedString(string: "Investment amount",attributes: [NSAttributedString.Key.foregroundColor  : UIColor.init(red: 0, green: 0, blue: 0, alpha: 0.5)])
         creditSum.attributedPlaceholder = placeholderText
         let pcForPercentage = NSAttributedString(string: "Interest rate",attributes: [NSAttributedString.Key.foregroundColor  : UIColor.init(red: 0, green: 0, blue: 0, alpha: 0.5)])
         percentage.attributedPlaceholder = pcForPercentage
         let pcForPeriod = NSAttributedString(string: "loan term/month",attributes: [NSAttributedString.Key.foregroundColor  : UIColor.init(red: 0, green: 0, blue: 0, alpha: 0.5)])
         period.attributedPlaceholder = pcForPeriod
-        
     }
     
     func setupConstraints() {
         let stack = UIStackView(arrangedSubviews: [creditLabel,creditSum,percentage,period], axis: .vertical, spacing: 10)
-        
-        
-        
         addSubview(stack)
         addSubview(buttonToSum)
         addSubview(totalSum)
         addSubview(dismissButton)
         addSubview(monthpay)
-        
         Helper.tamicOff(views: [stack,buttonToSum,totalSum,dismissButton,monthpay])
-        
-        
+
         NSLayoutConstraint.activate([stack.centerXAnchor.constraint(equalTo: centerXAnchor),
                                      stack.topAnchor.constraint(equalTo: topAnchor,constant: 96),
                                      buttonToSum.centerXAnchor.constraint(equalTo: centerXAnchor),
@@ -88,9 +81,6 @@ class CreditView: UIView {
                                      dismissButton.widthAnchor.constraint(equalToConstant: 350),
                                      totalSum.heightAnchor.constraint(equalToConstant: 96),
                                      monthpay.heightAnchor.constraint(equalToConstant: 96)])
-        
-        
-        
     }
     
     required init?(coder: NSCoder) {

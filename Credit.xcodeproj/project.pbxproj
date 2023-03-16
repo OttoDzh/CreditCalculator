@@ -10,14 +10,12 @@
 		FB21D9EB297F0B96003D28CB /* CreditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB21D9EA297F0B96003D28CB /* CreditViewController.swift */; };
 		FB21D9ED297F0BB6003D28CB /* CreditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB21D9EC297F0BB6003D28CB /* CreditView.swift */; };
 		FB21D9EF29807E96003D28CB /* infix.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB21D9EE29807E96003D28CB /* infix.swift */; };
-		FB84D64C297DA3FB005A2C9C /* DepositWithCapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB84D64B297DA3FB005A2C9C /* DepositWithCapViewController.swift */; };
-		FB84D64E297DA416005A2C9C /* DepositWithCapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB84D64D297DA416005A2C9C /* DepositWithCapView.swift */; };
 		FBFE911D297C176C00454B80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFE911C297C176C00454B80 /* AppDelegate.swift */; };
 		FBFE911F297C176C00454B80 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFE911E297C176C00454B80 /* SceneDelegate.swift */; };
 		FBFE9126297C176D00454B80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBFE9125297C176D00454B80 /* Assets.xcassets */; };
 		FBFE9129297C176D00454B80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBFE9127297C176D00454B80 /* LaunchScreen.storyboard */; };
-		FBFE9131297C17B400454B80 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFE9130297C17B400454B80 /* MainViewController.swift */; };
-		FBFE9133297C17C200454B80 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFE9132297C17C200454B80 /* MainView.swift */; };
+		FBFE9131297C17B400454B80 /* DepositVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFE9130297C17B400454B80 /* DepositVC.swift */; };
+		FBFE9133297C17C200454B80 /* DepositView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFE9132297C17C200454B80 /* DepositView.swift */; };
 		FBFE913D297C187E00454B80 /* ViewSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFE9135297C187E00454B80 /* ViewSettings.swift */; };
 		FBFE913E297C187E00454B80 /* ButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFE9136297C187E00454B80 /* ButtonExtension.swift */; };
 		FBFE913F297C187E00454B80 /* LabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFE9137297C187E00454B80 /* LabelExtension.swift */; };
@@ -32,16 +30,14 @@
 		FB21D9EA297F0B96003D28CB /* CreditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditViewController.swift; sourceTree = "<group>"; };
 		FB21D9EC297F0BB6003D28CB /* CreditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditView.swift; sourceTree = "<group>"; };
 		FB21D9EE29807E96003D28CB /* infix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infix.swift; sourceTree = "<group>"; };
-		FB84D64B297DA3FB005A2C9C /* DepositWithCapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositWithCapViewController.swift; sourceTree = "<group>"; };
-		FB84D64D297DA416005A2C9C /* DepositWithCapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositWithCapView.swift; sourceTree = "<group>"; };
 		FBFE9119297C176C00454B80 /* Credit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Credit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBFE911C297C176C00454B80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBFE911E297C176C00454B80 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FBFE9125297C176D00454B80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBFE9128297C176D00454B80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FBFE912A297C176D00454B80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FBFE9130297C17B400454B80 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		FBFE9132297C17C200454B80 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		FBFE9130297C17B400454B80 /* DepositVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositVC.swift; sourceTree = "<group>"; };
+		FBFE9132297C17C200454B80 /* DepositView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositView.swift; sourceTree = "<group>"; };
 		FBFE9135297C187E00454B80 /* ViewSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewSettings.swift; sourceTree = "<group>"; };
 		FBFE9136297C187E00454B80 /* ButtonExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonExtension.swift; sourceTree = "<group>"; };
 		FBFE9137297C187E00454B80 /* LabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelExtension.swift; sourceTree = "<group>"; };
@@ -63,18 +59,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FB84D64F297DA420005A2C9C /* Controllers */ = {
+		FB18ACF529C3780E00394274 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
-				FBFE9130297C17B400454B80 /* MainViewController.swift */,
-				FBFE9132297C17C200454B80 /* MainView.swift */,
-				FB84D64B297DA3FB005A2C9C /* DepositWithCapViewController.swift */,
-				FB84D64D297DA416005A2C9C /* DepositWithCapView.swift */,
+				FBFE911C297C176C00454B80 /* AppDelegate.swift */,
+				FBFE911E297C176C00454B80 /* SceneDelegate.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		FB84D64F297DA420005A2C9C /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				FBFE9130297C17B400454B80 /* DepositVC.swift */,
+				FBFE9132297C17C200454B80 /* DepositView.swift */,
 				FB21D9EA297F0B96003D28CB /* CreditViewController.swift */,
 				FB21D9EC297F0BB6003D28CB /* CreditView.swift */,
 				FB21D9EE29807E96003D28CB /* infix.swift */,
 			);
-			path = Controllers;
+			path = VC;
 			sourceTree = "<group>";
 		};
 		FBFE9110297C176C00454B80 = {
@@ -96,10 +99,9 @@
 		FBFE911B297C176C00454B80 /* Credit */ = {
 			isa = PBXGroup;
 			children = (
-				FBFE911C297C176C00454B80 /* AppDelegate.swift */,
-				FBFE911E297C176C00454B80 /* SceneDelegate.swift */,
+				FB18ACF529C3780E00394274 /* Scene */,
 				FBFE9134297C182F00454B80 /* EasyWay */,
-				FB84D64F297DA420005A2C9C /* Controllers */,
+				FB84D64F297DA420005A2C9C /* VC */,
 				FBFE9125297C176D00454B80 /* Assets.xcassets */,
 				FBFE9127297C176D00454B80 /* LaunchScreen.storyboard */,
 				FBFE912A297C176D00454B80 /* Info.plist */,
@@ -192,18 +194,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB84D64C297DA3FB005A2C9C /* DepositWithCapViewController.swift in Sources */,
 				FB21D9ED297F0BB6003D28CB /* CreditView.swift in Sources */,
 				FB21D9EF29807E96003D28CB /* infix.swift in Sources */,
 				FBFE9143297C187E00454B80 /* StackViewExtension.swift in Sources */,
 				FB21D9EB297F0B96003D28CB /* CreditViewController.swift in Sources */,
 				FBFE913F297C187E00454B80 /* LabelExtension.swift in Sources */,
 				FBFE9140297C187E00454B80 /* TextFieldExtension.swift in Sources */,
-				FBFE9131297C17B400454B80 /* MainViewController.swift in Sources */,
-				FBFE9133297C17C200454B80 /* MainView.swift in Sources */,
+				FBFE9131297C17B400454B80 /* DepositVC.swift in Sources */,
+				FBFE9133297C17C200454B80 /* DepositView.swift in Sources */,
 				FBFE9144297C187E00454B80 /* ODFonts.swift in Sources */,
 				FBFE913D297C187E00454B80 /* ViewSettings.swift in Sources */,
-				FB84D64E297DA416005A2C9C /* DepositWithCapView.swift in Sources */,
 				FBFE9141297C187E00454B80 /* Helper.swift in Sources */,
 				FBFE913E297C187E00454B80 /* ButtonExtension.swift in Sources */,
 				FBFE911D297C176C00454B80 /* AppDelegate.swift in Sources */,
